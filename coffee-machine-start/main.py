@@ -60,7 +60,8 @@ def check_resources(drink):
         if resources[ingredient] < current_drink['ingredients'][ingredient]:
             enough_ingredients = False
             break
-    print(enough_ingredients)
+    if not enough_ingredients:
+        print("There is not enough resources to complete this transaction")
     return enough_ingredients
 
 
@@ -71,25 +72,30 @@ def enter_coins():
     nickles = int(input("How many nickles?: "))
     pennies = int(input("How many pennies?: "))
     sum_coins = (quarters*0.25) + (dimes*0.10) + (nickles*0.05) + (pennies*0.01)
-    print(sum_coins)
     return sum_coins
 
 
 def update_report(drink):
     ingredients = MENU[drink]["ingredients"]
     for ingredient in ingredients:
-        print(ingredient)
+        resources[ingredient] -= ingredients[ingredient]
 
 
-def transaction(coins_input,drink):
+def transaction(coins_input, drink):
     menu_drink_cost = MENU[drink]["cost"]
     cost_difference = menu_drink_cost-coins_input
     if cost_difference == 0:
-        print("Update report")
+        update_report(drink)
+        print(f"Here is your {user_input}. Enjoy!")
+        return menu_drink_cost
     elif cost_difference > 0:
         print("Not enough funds")
+        return 0
     else:
-        print("Here's money back")
+        update_report(drink)
+        print(f"Here's ${(round(cost_difference, 2))*-1} in change.")
+        print(f"Here is your {user_input}. Enjoy!")
+        return menu_drink_cost
 
 
 while machine_on:
@@ -100,16 +106,18 @@ while machine_on:
     # TODO 3: Print Report - when user enters report in prompt, resources should be printed out
     if user_input == 'report':
         report()
-    if user_input == 'off':
+    elif user_input == 'off':
         machine_on = False
 
     # TODO 4: Check if resources are sufficient - are there enough resources to fulfill order?
-    if check_resources(user_input):
+    elif check_resources(user_input):
         # TODO 5: Prompt user to enter coins
         # TODO 5A: calculate value of coins inserted
         total_input = enter_coins()
         # TODO 6: Was transaction successful? Enough money inserted?
-        transaction(total_input, user_input)
-        #TODO 6A: If enough money, cost of drink to make is deducated from resources and added to report
+        success = transaction(total_input, user_input)
+        total_money += success
 
-        #TODO 6B: If user inserted too much money, machine offers change
+        # TODO 6A: If enough money, cost of drink to make is deducated from resources and added to report
+
+        # TODO 6B: If user inserted too much money, machine offers change
