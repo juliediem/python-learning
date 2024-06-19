@@ -111,4 +111,5 @@ while machine_on:
         # TODO 6: Was transaction successful? Enough money inserted?
         transaction(total_input, user_input)
         #TODO 6A: If enough money, cost of drink to make is deducated from resources and added to report
+
         #TODO 6B: If user inserted too much money, machine offers change
