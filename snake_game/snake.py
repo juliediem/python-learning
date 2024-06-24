@@ -20,6 +20,7 @@ class Snake:
         """Creates the snake body"""
         for position in self.position:
             self.add_segment(position)
+            
 
     def add_segment(self, position):
         """Creates the snake body"""
