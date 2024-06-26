@@ -16,7 +16,9 @@ check_answer = CheckAnswer()
 while check_answer.game_in_progress:
     answer_state = check_answer.user_answer()
     check_answer.compare_answer(answer_state)
-
+    if answer_state == "Exit":
+        check_answer.missing_answers()
+        break
 
 
 # TODO Use a loop to allow a user to keep guessing

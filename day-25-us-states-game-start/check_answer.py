@@ -44,3 +44,10 @@ class CheckAnswer(Turtle):
     def finish_game(self):
         if self.score == 50:
             print("hooray you beat the game")
+
+    def missing_answers(self):
+        correct_answers = self.df.state.to_list()
+        for answer in self.guesses:
+            correct_answers.remove(answer)
+        new_df = pandas.DataFrame(correct_answers)
+        new_df.to_csv("Missing Cities.csv")
