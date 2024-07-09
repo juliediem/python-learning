@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "1cc9ca189027d723",
+    "type": "split",
+    "children": [
+      {
+        "id": "6033e5a16bb79f36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3b4b77cfca72e8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 IMF_AdvancedStarterKit_v2/030 People MAP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "05d97f2ce2a1950b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b89bbf205ba3099",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c6b8ef5c8f856b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "67128ce0bdb45531",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "146bafa00a2c98a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6d6594691b101d92",
+    "type": "split",
+    "children": [
+      {
+        "id": "52990a4186550302",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0fbf454a862d7bd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03 IMF_AdvancedStarterKit_v2/030 People MAP.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ebc2cdd0c5f0f006",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03 IMF_AdvancedStarterKit_v2/030 People MAP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ec6a8cb0734eda1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b453f7aaaa113426",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03 IMF_AdvancedStarterKit_v2/030 People MAP.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f3b4b77cfca72e8b",
+  "lastOpenFiles": [
+    "03 IMF_AdvancedStarterKit_v2/020 Body MOC.md",
+    "03 IMF_AdvancedStarterKit_v2/010 Mind MOC.md",
+    "03 IMF_AdvancedStarterKit_v2/005 Active MOC.md",
+    "03 IMF_AdvancedStarterKit_v2/000 Index.md",
+    "06 Writing Fiction With Obsidian/Scripts for Building TOC files.md",
+    "06 Writing Fiction With Obsidian/03 Tracking Submissions in Obsidian.md",
+    "06 Writing Fiction With Obsidian/02 How I Wrote These Docs.md",
+    "06 Writing Fiction With Obsidian/01 Writing Fiction in Obsidian.md",
+    "05 On the process of forging evergreen notes/010 Mind MOC.md",
+    "05 On the process of forging evergreen notes/_START HERE - On the process of forging evergreen notes MOC.md",
+    "05 On the process of forging evergreen notes/000 Index.md",
+    "03 IMF_AdvancedStarterKit_v2/__START HERE.md",
+    "02 PARA_Starter_Kit_v2/1. Projects/PARA Starter Kit/Workflow.md",
+    "02 PARA_Starter_Kit_v2/1. Projects/PARA Starter Kit/Outline.md",
+    "02 PARA_Starter_Kit_v2/1. Projects/PARA Starter Kit/Methodology.md",
+    "02 PARA_Starter_Kit_v2/1. Projects/Obsidian Theme/Things to look into.md",
+    "02 PARA_Starter_Kit_v2/2. Areas/House/It wasn't easy but it was worth it.md",
+    "02 PARA_Starter_Kit_v2/2. Areas/Finance/YNAB Ramit Sethi Interview notes.md",
+    "02 PARA_Starter_Kit_v2/2. Areas/Blog/=Draft= Project Manager for solo person.md",
+    "02 PARA_Starter_Kit_v2/START HERE!.md"
+  ]
+}

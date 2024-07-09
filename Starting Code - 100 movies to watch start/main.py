@@ -10,8 +10,10 @@ response = requests.get(URL)
 movies_webpage = response.text
 
 soup = BeautifulSoup(movies_webpage, "html.parser")
-print(soup.prettify())
-
+# print(soup.prettify())
+#
+# test = soup.find_all(class_="article-title-description__text")
+# print(test)
 # Using List comprehension as a shortcut to for loop
 titles = [title.getText() for title in soup.find_all(name="h3", class_="title")]
 print(titles)

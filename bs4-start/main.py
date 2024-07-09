@@ -1,3 +1,13 @@
+
+
+#  /\___/\
+# ꒰˶• ༝ -˶꒱
+# ./づ~ ☕ tea for you
+
+# Welcome 
+# This is me if you care
+
+
 import requests
 from bs4 import BeautifulSoup
 import requests
