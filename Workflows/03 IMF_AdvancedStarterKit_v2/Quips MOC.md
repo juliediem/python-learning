@@ -1,1 +1,0 @@
-#quips ; #quotes100 ; #quotes250 
