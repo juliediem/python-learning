@@ -2,10 +2,7 @@
 
 #  /\___/\
 # ꒰˶• ༝ -˶꒱
-# ./づ~ ☕ tea for you
-
-# Welcome 
-# This is me if you care
+# ./づ~ ☕
 
 
 import requests
