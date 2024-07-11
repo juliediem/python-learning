@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-import dotenv
 
 from dotenv import load_dotenv
 import os
@@ -36,3 +35,5 @@ print(song_names)
 scope = "user-library-read"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
+
+results = sp.current_user_saved_tracks()
