@@ -1,44 +1,42 @@
 import numpy as np
 
-# TODO Input should contain at least 9 digits
 
 def calculate(list):
-    if len(list)!=9:
+    if len(list) != 9:
         raise ValueError('List must contain nine numbers.')
 
     # TODO Convert list into a 3x3 Numpy Array
-    matrix = np.array(list).reshape(3,3)
-
+    matrix = np.array(list).reshape(3, 3)
 
     calculation = {
-        'mean':[
-            np.mean(matrix,axis=0).tolist(),
-            np.mean(matrix,axis=1).tolist(),
+        'mean': [
+            np.mean(matrix, axis=0).tolist(),
+            np.mean(matrix, axis=1).tolist(),
             np.mean(matrix)
         ],
-        'variance':[
-            np.var(matrix,axis=0).tolist(),
-            np.var(matrix,axis=1).tolist(),
+        'variance': [
+            np.var(matrix, axis=0).tolist(),
+            np.var(matrix, axis=1).tolist(),
             np.var(matrix)
         ],
-        'standard deviation':[
-            np.std(matrix,axis=0).tolist(),
-            np.std(matrix,axis=1).tolist(),
+        'standard deviation': [
+            np.std(matrix, axis=0).tolist(),
+            np.std(matrix, axis=1).tolist(),
             np.std(matrix)
         ],
-        'max':[
-            np.max(matrix,axis=0).tolist(),
-            np.max(matrix,axis=1).tolist(),
+        'max': [
+            np.max(matrix, axis=0).tolist(),
+            np.max(matrix, axis=1).tolist(),
             np.max(matrix)
         ],
-        'min':[
-            np.min(matrix,axis=0).tolist(),
-            np.min(matrix,axis=1).tolist(),
+        'min': [
+            np.min(matrix, axis=0).tolist(),
+            np.min(matrix, axis=1).tolist(),
             np.min(matrix)
         ],
-        'sum':[
-            np.sum(matrix,axis=0).tolist(),
-            np.sum(matrix,axis=1).tolist(),
+        'sum': [
+            np.sum(matrix, axis=0).tolist(),
+            np.sum(matrix, axis=1).tolist(),
             np.sum(matrix)
         ]
     }
